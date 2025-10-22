@@ -3,25 +3,34 @@ import pygetwindow as gw
 import time
 
 
-TITULO_DA_JANELA = "PokeМMO" 
+TITULO_DA_JANELA = "PokeMMO" 
 
 
 COMANDOS_TECLADO = [
+   
+   '3', 20, 'z', 'z', 'z', 30, 'z', 'z', 'z', 30, 'z', 'z', 'z', 30,
+   '3', 20, 'z', 'z', 'z', 30, 'z', 'z', 'z', 30, 'z', 'z', 'z', 30,
+   '3', 20, 'z', 'z', 'z', 30, 'z', 'z', 'z', 30, 'z', 'z', 'z', 30,
+   '3', 20, 'z', 'z', 'z', 30, 'z', 'z', 'z', 30, 'z', 'z', 'z', 30,
+   '3', 20, 'z', 'z', 'z', 30, 'z', 'z', 'z', 30, 'z', 'z', 'z', 30,
+   '3', 20, 'z', 'z', 'z', 30, 'z', 'z', 'z', 30, 'z', 'z', 'z', 30, # 6 batalhas
   
     's', 's', 1, '2', 'w', 'z', 6,   # abre o mapa e seleciona o pokecenter   
                  
-    'w', 'w', 2, 'w', 'w', 'w',  'w' , 'd' ,'d', 'd', 'w','z', 0.5,'z', 0.5 ,'z', 5, 'z', 0.5, 'z', # recupera a vida dos pokemons
+    'w', 'w', 2, 'w', 'w', 'w',  'w' , 'd' ,'d', 'd', 'w','z', 0.5,'z', 0.5 ,'z', 5, 'z', 0.5, 'z', 0.5, # recupera a vida dos pokemons
          
     'a', 'a','a', 's', 's', 's', 's', 's', 's', 2, # sai do pokecenter 
       
     
     '1', 's', 's', 's', 's', 's', 's', 's', 'd', 'd', 's', 's', 'd', 'd', 'd', 's', 's', 'a', 'a', 's', 's', 's', 's', 's', 'd', 'd', 's', 's', 'a', 'a', 's',  's', 's', 's', 'd', 'd', 'd', 'd', 's', 's', 's', 's', 's', 's', 'a', 'a', '1',  'a', 'w', 'w',  # chega a caverna  
+
                           
 ]
 
 
 def automatizar_tarefa():
   try:
+    """
     print(f"Procurando pela janela com o título: '{TITULO_DA_JANELA}'...")
         
        
@@ -52,7 +61,7 @@ def automatizar_tarefa():
         
     # Espera 1 segundo para garantir que a janela está 100% focada
     time.sleep(1)
-
+"""
     # 3. Executa os comandos do teclado
     print("Enviando comandos do teclado...")
     for comando in COMANDOS_TECLADO:
@@ -77,7 +86,7 @@ def automatizar_tarefa():
 
 
 if __name__ == "__main__":
-    #while True:
+    
       print("Iniciando a automação em 3 segundos...")
       time.sleep(3)
       
